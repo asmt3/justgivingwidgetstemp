@@ -16,6 +16,10 @@
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 
         <?php echo $this->Html->css('main'); ?>
+        <?php echo $this->Html->css('//widgets.justgiving.com/Content/widget-FundraisingPage.css'); ?>
+        <?php echo $this->Html->css('widgets/donationlist'); ?>
+        <?php echo $this->Html->css('widgets/donationlistbyref'); ?>
+        <?php echo $this->Html->css('widgets/eventlist'); ?>
         <?php echo $this->Html->script('/js/vendor/modernizr-2.6.2.min.js'); ?>
 
         

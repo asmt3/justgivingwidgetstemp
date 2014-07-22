@@ -1,0 +1,10 @@
+
+
+
+/* Events list */
+ul.eventsList {list-style: none; margin:0; padding:0;}
+ul.eventsList li {margin-bottom:1em; background: #eee;}
+ul.eventsList .name {background:#333; color:#fff; font-size:22px;}
+
+.fundraise a {display: block; color:#333; background: #ddd; padding:1em 0; text-decoration: none; text-align: center;}
+.fundraise a:hover {background: #ccc;}
