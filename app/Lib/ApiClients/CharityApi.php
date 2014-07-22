@@ -26,6 +26,7 @@ class CharityApi extends ClientBase
 	{
 		$locationFormat = $this->Parent->RootDomain . "{apiKey}/v{apiVersion}/charity/" . $charityId . "/donations";
 		$url = $this->BuildUrl($locationFormat);
+		var_dump($url);
 		$json = $this->curlWrapper->Get($url, $this->BuildAuthenticationValue());
 		return json_decode($json); 
 	}
