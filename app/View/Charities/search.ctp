@@ -1,0 +1,1 @@
+<?php echo json_encode($results->charitySearchResults, JSON_PRETTY_PRINT);

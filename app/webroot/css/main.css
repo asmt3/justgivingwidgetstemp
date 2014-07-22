@@ -1,0 +1,100 @@
+nav {background:#ddd; border-bottom: 2px solid #eee; margin-bottom:1em;}
+nav ul {padding:0;}
+nav ul li {float:left; margin-left:10px;}
+nav ul li a {padding:0.5em; background:#eee; color:#000; text-decoration: none;}
+h1 {margin:1em;}
+
+#charity-search {width:100%; font-size: 22px;}
+
+
+/* Widget Container */
+.widget-container {
+	min-width:320px; 
+	max-width:480px;	
+}
+
+/*Donation List*/
+ul.donationlist {list-style: none; margin:0; padding:0;}
+ul.donationlist .total {float:left; width:25%; text-align: center; background: #ddd; padding:2.5%; margin-bottom:0.5em;}
+ul.donationlist li:nth-child(2n) .total {background:#eee;}
+ul.donationlist .total .amount {font-size:28px;}
+ul.donationlist .total .estimatedTaxReclaim {color:#999; font-size:0.8em;}
+ul.donationlist .detail {float:left; width:65%; margin-left:2.5%;}
+ul.donationlist .detail h2 {margin: 0; font-size:16px;}
+
+/* Donation list CTAs*/
+.ctas {list-style: none; margin:0; padding:0;}
+.ctas li {float:left; width:45%;}
+.ctas li.donate {float:right;}
+.ctas li a {display: block; color:#333; background: #eee; padding:1em 0; text-decoration: none; text-align: center;}
+.ctas li a:hover {background: #ddd;}
+
+
+
+/* Events list */
+ul.eventsList {list-style: none; margin:0; padding:0;}
+ul.eventsList li {margin-bottom:1em; background: #eee;}
+ul.eventsList .name {background:#333; color:#fff; font-size:22px;}
+
+.fundraise a {display: block; color:#333; background: #ddd; padding:1em 0; text-decoration: none; text-align: center;}
+.fundraise a:hover {background: #ccc;}
+
+iframe[name=widget-preview] {width:100%; height:500px; border:0;}
+
+
+/*Example Cols*/
+.example-col {width:30%; float:left; margin-left:3%;}
+.example-col textarea {width:100%; height:10em; margin-bottom:1em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
