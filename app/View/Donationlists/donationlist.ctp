@@ -1,70 +1,67 @@
+<?php
 
+	// build donate URL
+	$donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $charityId . '?utm_source=website_cid' . $charityId . '&utm_medium=widget&utm_campaign=latestdonationswidget';
+
+?>
 <div class="widget-container">
-<ul class="donationlist">
+	<div class="widget-header">
+		Recent donations on <img src="/img/logo-justgiving.png" class="jg-logo">
+	</div>
+	<ul class="donationlist">
 
-<?php 
+	<?php 
 
-
-
-
-
-
-foreach ($donations as $donation):?>
-	<li class="cf">
-	
-
+	foreach ($donations as $donation):?>
+		<li class="cf">
 		
 
-		<div class="detail">
-			<?php if ( ! $this->request->query('hide_donor')): ?>
-				<h2><?php echo $donation->donorDisplayName ?></h2>
-			<?php endif; // ( ! $this->request->query('hide_donor')): ?>
+			
+
+			<div class="detail">
+				<?php if ( ! $this->request->query('hide_donor')): ?>
+					<h2><?php echo $donation->donorDisplayName ?></h2>
+				<?php endif; // ( ! $this->request->query('hide_donor')): ?>
 
 
-			<p>
-				
-				<?php if ( ! $this->request->query('hide_message')): ?>
-					<?php echo $this->Text->truncate($donation->message) ?>
-				<?php endif; // ( ! $this->request->query('hide_message')): ?>
+				<p>
+					
+					<?php if ( ! $this->request->query('hide_message')): ?>
+						<?php echo $this->Text->truncate($donation->message) ?>
+					<?php endif; // ( ! $this->request->query('hide_message')): ?>
 
-				<?php if ( ! $this->request->query('hide_date')): ?>
-					<em class="donationDate">
-						<?php echo $this->JgTime->timeAgoInWords($donation->donationDate) ?>
-					</em>
-				<?php endif; // ( ! $this->request->query('hide_date')): ?>
-			</p>
-		</div>
-
-		<div class="total">
-
-			<div class="amount">
-				<?php echo $this->Number->currency($donation->amount, 'GBP'); ?>
+					<?php if ( ! $this->request->query('hide_date')): ?>
+						<em class="donationDate">
+							<?php echo $this->JgTime->timeAgoInWords($donation->donationDate) ?>
+						</em>
+					<?php endif; // ( ! $this->request->query('hide_date')): ?>
+				</p>
 			</div>
 
-			<?php if ($donation->estimatedTaxReclaim): ?>
+			<div class="total">
 
-				<div class="estimatedTaxReclaim">
-					+ <?php echo $this->Number->currency($donation->estimatedTaxReclaim, 'GBP'); ?> GiftAid
+				<div class="amount">
+					<?php echo $this->Number->currency($donation->amount, 'GBP'); ?>
 				</div>
 
-			<?php endif; //($donation->estimatedTaxReclaim): ?>
+				<?php if ($donation->estimatedTaxReclaim): ?>
 
-		</div>
+					<div class="estimatedTaxReclaim">
+						+ <?php echo $this->Number->currency($donation->estimatedTaxReclaim, 'GBP'); ?> GiftAid
+					</div>
+
+				<?php endif; //($donation->estimatedTaxReclaim): ?>
+
+			</div>
 
 
 
-	</li>
-<?php endforeach ?>
+		</li>
+	<?php endforeach ?>
 
-</ul>
+	</ul>
 
-<ul class="ctas">
-	<li>
-		<a href="http://www.justgiving.com/fundraising-page/creation/?cid=<?php echo $charityId?>">Fundraise now</a>
-	</li>
-
-	<li class="donate">
-		<a href="https://www.justgiving.com/4w350m3/donation/direct/charity/<?php echo $charityId; ?>">Donate now</a>
-	</li>
-</ul>
+	<div class="cta">
+			<a href="<?php echo $donateURL?>">Donate</a>
+	</div>
 </div>

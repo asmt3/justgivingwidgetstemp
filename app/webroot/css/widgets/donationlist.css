@@ -11,18 +11,15 @@ ul.donationlist {list-style: none; margin:0; padding:0;}
 ul.donationlist .total {float:right; width:25%; text-align: center; background: #ddd; padding:2.5%; margin-bottom:0.5em;}
 ul.donationlist li {margin-bottom:10px; margin-left:2.5%;}
 ul.donationlist li:nth-child(2n) .total {background:#eee; }
-ul.donationlist .amount {font-size:28px; }
+ul.donationlist .amount {font-size:24px; }
 ul.donationlist .estimatedTaxReclaim {color:#999; font-size:12px !important;}
 ul.donationlist .detail {float:left; width:70%;}
 ul.donationlist .detail h2 {margin: 0; font-size:16px; font-weight: bold;}
 ul.donationlist .detail p {margin:0; font-size:13px !important;}
-ul.donationlist .detail p em.donationDate {font-size:13px !important;}
+ul.donationlist .detail p em.donationDate {font-size:13px !important; display:block;}
 
 
 
-/* Donation list CTAs*/
-.ctas {list-style: none; margin:0; padding:0;}
-.ctas li {float:left; width:45%;}
-.ctas li.donate {float:right;}
-.ctas li a {display: block; color:#333; background: #eee; padding:1em 0; text-decoration: none; text-align: center;}
-.ctas li a:hover {background: #ddd;}
+/* Donation list CTA*/
+.cta a {display: block; color:#333; background: #eee; padding:1em 0; text-decoration: none; text-align: center;}
+.cta a:hover {background: #ddd;}

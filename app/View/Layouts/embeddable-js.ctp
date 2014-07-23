@@ -53,7 +53,7 @@ $contentMinified = preg_replace(
     };
 
     addLink('https://widgets.justgiving.com/Content/roboto.css');
-    addLink('https://widgets.justgiving.com/Content/widget-FundraisingPage.css');
+    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/css/widgets/shared.css');
     addLink('<?php echo Configure::read('App.fullBaseUrl');?>/css/widgets/donationlist.css');
     addLink('<?php echo Configure::read('App.fullBaseUrl');?>/css/widgets/donationlistbyref.css');
     addLink('<?php echo Configure::read('App.fullBaseUrl');?>/css/widgets/eventlist.css');

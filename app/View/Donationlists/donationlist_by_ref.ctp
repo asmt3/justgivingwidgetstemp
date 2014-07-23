@@ -1,6 +1,6 @@
 <?php
 
-$default_limit = 4;
+$default_limit = 5;
 $min_limit = 1;
 $max_limit = 10;
 
@@ -19,6 +19,11 @@ $donations = array_slice($donations, 0, $limit);
 ?>
 
 <div class="widget-container">
+
+	<div class="widget-header">
+		Recent donations on <img src="/img/logo-justgiving.png" class="jg-logo">
+	</div>
+
 	<ul class="donationlist">
 
 	<?php foreach ($donations as $donation):?>
