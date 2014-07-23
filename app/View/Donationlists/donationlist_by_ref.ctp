@@ -13,7 +13,7 @@ if ($limit = $this->request->query('limit')) {
 } else {
 	$limit = $default_limit;
 }
-
+var_dump($donations);
 $donations = array_slice($donations, 0, $limit);
 
 ?>
@@ -21,7 +21,7 @@ $donations = array_slice($donations, 0, $limit);
 <div class="widget-container">
 
 	<div class="widget-header">
-		Recent donations on <img src="/img/logo-justgiving.png" class="jg-logo">
+		Recent donations on <img src="<?php echo Configure::read('App.fullBaseUrl');?>/img/logo-justgiving.png" class="jg-logo">
 	</div>
 
 	<ul class="donationlist">

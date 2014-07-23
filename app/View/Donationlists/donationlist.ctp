@@ -6,7 +6,7 @@
 ?>
 <div class="widget-container">
 	<div class="widget-header">
-		Recent donations on <img src="/img/logo-justgiving.png" class="jg-logo">
+		Recent donations on <img src="<?php echo Configure::read('App.fullBaseUrl');?>/img/logo-justgiving.png" class="jg-logo">
 	</div>
 	<ul class="donationlist">
 
