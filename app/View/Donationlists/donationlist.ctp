@@ -4,9 +4,36 @@
 
 <?php 
 
+
+
+
+
+
 foreach ($donations as $donation):?>
 	<li class="cf">
 	
+
+		
+
+		<div class="detail">
+			<?php if ( ! $this->request->query('hide_donor')): ?>
+				<h2><?php echo $donation->donorDisplayName ?></h2>
+			<?php endif; // ( ! $this->request->query('hide_donor')): ?>
+
+
+			<p>
+				
+				<?php if ( ! $this->request->query('hide_message')): ?>
+					<?php echo $this->Text->truncate($donation->message) ?>
+				<?php endif; // ( ! $this->request->query('hide_message')): ?>
+
+				<?php if ( ! $this->request->query('hide_date')): ?>
+					<em class="donationDate">
+						<?php echo $this->JgTime->timeAgoInWords($donation->donationDate) ?>
+					</em>
+				<?php endif; // ( ! $this->request->query('hide_date')): ?>
+			</p>
+		</div>
 
 		<div class="total">
 
@@ -22,16 +49,6 @@ foreach ($donations as $donation):?>
 
 			<?php endif; //($donation->estimatedTaxReclaim): ?>
 
-		</div>
-
-		<div class="detail">
-			<h2><?php echo $donation->donorDisplayName ?></h2>
-			<p>
-				<?php echo $this->Text->truncate($donation->message) ?>
-				<em class="donationDate">
-					<?php echo $this->JgTime->timeAgoInWords($donation->donationDate) ?>
-				</em>
-			</p>
 		</div>
 
 
