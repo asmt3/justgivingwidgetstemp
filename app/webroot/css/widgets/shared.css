@@ -1,0 +1,298 @@
+html .jg-widget {
+  position: relative;
+  min-width: 179px;
+  border: 1px solid #78256d;
+  /* Utils */
+  /* Buttons */
+}
+html .jg-widget * {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px !important;
+  color: black;
+  /* bootstrap overrides */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html .jg-widget a {
+  color: #000;
+  text-decoration: none;
+}
+/*asmt3*/
+/*html .jg-widget:after {
+  content: ' ';
+  position: absolute;
+  width: 69px;
+  height: 12px;
+  bottom: -7px;
+  right: 1em;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAMCAYAAAA02nCNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MUU5RjZFRkM0OEMxMUUzOTZCRjg3NEY4QkVFQkNENyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MUU5RjZGMEM0OEMxMUUzOTZCRjg3NEY4QkVFQkNENyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUxRTlGNkVEQzQ4QzExRTM5NkJGODc0RjhCRUVCQ0Q3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUxRTlGNkVFQzQ4QzExRTM5NkJGODc0RjhCRUVCQ0Q3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+T/NLJwAAA4JJREFUeNrclklsjVEUx9t6ppoFacQcVCzsUFE0poUFIYYKFsQCMaRiZVqUkBLzEPNY8xRDghjaxJwIaQwhaZSYWqHpe31ttbTP78j/S26e91pDLbjJL3c6995zzz3nfF9sKBSKccvCxLk3qdpB+ornG/fE/EZhjySqo+oms8+bsLnFkAKN4CUchpXIBcPW9mIsUM05pudNdVORvRtTC8UXYcwO6ghNObQ+dUMIcaCfvsk3llyAsaoo+7bSHlZasq4Q2VLqVPqZUMeR7QQjYRMEoRhua64Oa5qrHWSPr/TjTDdnvScblOwX5Epom95x1g4z5Pf1jBepb3vFwleoB+W+Gow2E9aBH+zAZMjSXGc27EG9BhLNSHAVlsJ5Z48c2I/sIuo9MkiVvCMXukAaShZKvjVMVHsr3FB7DmyGsXBMY+McWdvvEZRx1inzHBnV2hNl0Nm0l0Ab2qbvJRiv+y2HPjDc9wdeZq5/Qp6TBy2gG3yKIj9BXvf9gii5VS81j2ottSd3zFnzGG5Bf5gso0xyjH0/wjkNJesVM+JJ9q+UN1op1cOMd+Q2KHJ8f2KUJk4ovYCdcMVeHAXs9Y5obgA8Ux7xynEZJM0MErbv5bD+ZhmlL/J9qUdofEs1uq2Gg3BHj9cdemvuCfQzj5Ieo20Qvb9Y6Fk7LsKGdX/SKPmwW+0hSo4PUbyn5rzyhgM/Ur9zxlKQS6DuoBcq0ngFFIadcxoK1M7Ua5r8oWp0u82ZFkofvdwk41jJZa7Ywkme+GOiRbn21BfkWh8gwXExz0BNkBuky7slXcYYCjN0yQVwwJGx3NNSr2Lylrz3QgbcgzHKV54HlbsHoHwF63coF3TV8D4l7l/xbEvIg2EU6w4ooU+LJGiecs4+fXL/sxr7DBfhqSOXHRYCHXXQBSVgz+vsdd47ctdhLpewT68lupDCbplCbJzkLMTSolxoO1SqHaohdKKVVc7newrM0tcmolEsAZ6BEiWfB2ZNLvEasrRZmT6X9rrXlOQK5CV+xXy8DJnBuuf6cgS07rFefZdeK1tneUZcD0kKs6D2z/EMwfhbqm0aMy/JdcLNkw04bb/mn6qfbyFDPQzmy6unwivJ5blGiQ3/efvNn7VmZlTF6c+usdBsIGX/euG8eEXCUBnb/Veajh67a9Uo/0LBKInKSwOhraLEPGkDBtlZ657yv5VvAgwAbOpM+GzWDrsAAAAASUVORK5CYII=);
+  background-color: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+html .jg-widget [class*="jg-widget-"] {
+  margin-bottom: 0.75em;
+}
+html .jg-widget .jg-widget-frame {
+  margin-bottom: 0!important;
+}
+html .jg-widget .jg-widget-fr-image {
+  position: relative;
+  border: none;
+  overflow: hidden;
+  min-height: 100px;
+  max-height: 470px;
+}
+html .jg-widget .jg-widget-fr-image img {
+  max-width: 100%;
+  min-width: 100%;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-inner {
+  margin-top: 0;
+  padding: 0 1em;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#bb000000', endColorstr='#bb000000');
+  /* IE */
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper * {
+  color: #fff;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper a {
+  color: #fff !important;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-title {
+  margin-bottom: 0.5em;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-amount-raised,
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-amount-raised *,
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-amount-target,
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-amount-target * {
+  margin-bottom: 0;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-progress {
+  border: 1px solid #fff;
+}
+html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-progress .jg-widget-fr-progress-inner {
+  background-color: #fff;
+}
+html .jg-widget .jg-widget-fr-inner {
+  padding: 0 0.5em;
+  margin-top: 1em;
+}
+html .jg-widget .jg-widget-fr-progress {
+  width: 100%;
+  height: 10px;
+  border: 1px solid #f58220;
+}
+html .jg-widget .jg-widget-fr-progress .jg-widget-fr-progress-inner {
+  background-color: #f58220;
+  height: 100%;
+}
+html .jg-widget .jg-widget-fr-donate {
+  margin-right: 1em;
+  margin-bottom: 0;
+  margin-left: 1em;
+  text-align: right;
+}
+html .jg-widget .jg-widget-fr-donate .jg-pure-button a {
+  height: 23px;
+  overflow: hidden;
+}
+html .jg-widget.jg-widget-xs .jg-widget-fr-fundraise {
+  /*display:none;*/
+}
+html .jg-widget.jg-widget-xs .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-summary {
+  display: none;
+}
+html .jg-widget.jg-widget-sm .jg-widget-fr-fundraise {
+  /*display:none;*/
+}
+html .jg-widget.jg-widget-md .jg-widget-fr-donate.jg-widget-fr-donate-thin {
+  width: 41%;
+  float: right;
+  margin-left: 0;
+}
+html .jg-widget.jg-widget-md .jg-widget-fr-fundraise.jg-widget-fr-fundraise-thin {
+  width: 41%;
+  float: left;
+}
+html .jg-widget.jg-widget-lg .jg-widget-fr-donate.jg-widget-fr-donate-thin {
+  width: 44%;
+  float: right;
+  margin-left: 0;
+}
+html .jg-widget.jg-widget-lg .jg-widget-fr-fundraise.jg-widget-fr-fundraise-thin {
+  width: 44%;
+  float: left;
+}
+html .jg-widget.jg-widget-xl .jg-widget-fr-donate.jg-widget-fr-donate-thin {
+  width: 45%;
+  float: right;
+  margin-left: 0;
+  margin-right: 3%;
+}
+html .jg-widget.jg-widget-xl .jg-widget-fr-fundraise.jg-widget-fr-fundraise-thin {
+  width: 45%;
+  float: left;
+  margin-left: 3%;
+}
+html .jg-widget .jg-widget-fr-fundraise {
+  margin-right: 1em;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+html .jg-widget .jg-widget-fr-fundraise .jg-pure-button a {
+  height: 23px;
+  overflow: hidden;
+}
+html .jg-widget .jg-widget-bold,
+html .jg-widget .jg-widget-bold * {
+  font-weight: 500;
+}
+html .jg-widget .jg-widget-block {
+  display: block;
+}
+html .jg-widget .jg-widget-floatl {
+  float: left;
+}
+html .jg-widget .jg-widget-floatr {
+  float: right;
+}
+html .jg-widget .jg-widget-text-small {
+  font-size: 14px;
+}
+html .jg-widget .jg-widget-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html .jg-widget .jg-pure-button {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 100%;
+  *font-size: 90%;
+  *overflow: visible;
+  color: #444;
+  color: rgba(0, 0, 0, 0.8);
+  *color: #444;
+  border: 1px solid #999;
+  border: 0 rgba(0, 0, 0, 0);
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: 0.1s linear -webkit-box-shadow;
+  -moz-transition: 0.1s linear -moz-box-shadow;
+  -ms-transition: 0.1s linear box-shadow;
+  -o-transition: 0.1s linear box-shadow;
+  transition: 0.1s linear box-shadow;
+  font-weight: 400;
+  font-family: roboto, arial;
+  border-bottom: none;
+  white-space: normal;
+  line-height: 23px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  width: 100%;
+}
+html .jg-widget .jg-pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+html .jg-widget .jg-pure-button:focus {
+  outline: 0;
+}
+html .jg-widget .jg-pure-button .jg-pure-button-hover,
+html .jg-widget .jg-pure-button:hover,
+html .jg-widget .jg-pure-button:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+html .jg-widget .jg-pure-button .jg-pure-button-active,
+html .jg-widget .jg-pure-button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+html .jg-widget .jg-button-magic {
+  color: #ffffff !important;
+  background: #882c84;
+}
+html .jg-widget .jg-button-magic:focus,
+html .jg-widget .jg-button-magic:active,
+html .jg-widget .jg-button-magic:hover {
+  background: #700066;
+}
+html .jg-widget .jg-button-magic :active {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+}
+html .jg-widget .jg-button-primary {
+  color: #ffffff !important;
+  background: #f58220;
+}
+html .jg-widget .jg-button-primary:focus,
+html .jg-widget .jg-button-primary:active,
+html .jg-widget .jg-button-primary:hover {
+  background: #d85700;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+}
+html .jg-widget .jg-button-primary:focus.jg-pure-button-disabled,
+html .jg-widget .jg-button-primary:active.jg-pure-button-disabled,
+html .jg-widget .jg-button-primary:hover.jg-pure-button-disabled {
+  background: #f58220;
+}
+/*# sourceMappingURL=widget-fundraisingpage.css.map */
+
+/*asmt3*/
+.widget-header {
+  margin-bottom:4px;
+  background-color:#eee; 
+  color:#333; 
+  font-size: 16px; 
+  padding:4px 10px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
+.widget-header img.jg-logo {
+  margin-bottom:-5px;
+  height:22px;
+}
