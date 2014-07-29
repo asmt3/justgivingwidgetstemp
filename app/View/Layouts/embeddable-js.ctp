@@ -2,9 +2,14 @@
 
 $contentWithSlashes = addcslashes($this->fetch('content'), '\'\\'); // just escape single quotes and backslashes
 
+
+// remove new lines
+$contentWithoutNewlines = trim(preg_replace('/\s+/', ' ', $contentWithSlashes));
+
+// minify
 $contentMinified = preg_replace(
 	['/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s'],['>','<','\\1'], 
-	$contentWithSlashes
+	$contentWithoutNewlines
 );
 
 ?>
