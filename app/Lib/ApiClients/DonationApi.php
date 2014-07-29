@@ -31,9 +31,7 @@ class DonationApi extends ClientBase
 
 	public function ByRef($ref)
 	{
-		$locationFormat = 'https://api-staging2.justgiving.com/5fc4e40b/v1/donation/ref/' . $ref;
-		// TODO: remove hardcode
-		// $locationFormat = $this->Parent->RootDomain . "{apiKey}/v{apiVersion}/donation/ref/" . $charityId . "/donations";
+		$locationFormat = $this->Parent->RootDomain . "{apiKey}/v{apiVersion}/donation/ref/" . $ref;
 		$url = $this->BuildUrl($locationFormat);
 		$json = $this->curlWrapper->Get($url, $this->BuildAuthenticationValue());
 		return json_decode($json); 
