@@ -30,7 +30,7 @@ $donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $ch
 	<ul class="donationlist">
 
 	<?php foreach ($donations as $donation):?>
-		<li class="cf">
+		<li class="jg-widget-clearfix">
 
 			<div class="detail">
 				<?php if ( ! $this->request->query('hide_donor')): ?>

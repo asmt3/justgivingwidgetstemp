@@ -18,7 +18,7 @@
 		$fundraiseURL = 'http://www.justgiving.com/fundraising-page/creation/?cid=' . $charity_id . '&amp;eid=' . $event->id . '&utm_source=website_cid' . $charity_id . '_eid' . $event->id . '&utm_medium=widget&utm_campaign=eventwidget';
 
 	?>
-		<li class="cf">
+		<li class="jg-widget-clearfix">
 
 			<div class="detail">
 				<div class="name">

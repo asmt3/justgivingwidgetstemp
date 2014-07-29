@@ -12,7 +12,7 @@
 	<ul class="donationlist">
 
 	<?php foreach ($donations as $donation): ?>
-		<li class="cf">
+		<li class="jg-widget-clearfix">
 		
 
 			<div class="detail">
