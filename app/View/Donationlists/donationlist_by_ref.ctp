@@ -13,7 +13,7 @@ if ($limit = $this->request->query('limit')) {
 } else {
 	$limit = $default_limit;
 }
-var_dump($donations);
+
 $donations = array_slice($donations, 0, $limit);
 
 ?>

@@ -2,11 +2,11 @@
 <div class="example-col">
 
 
-<textarea><div id="jg-widget-donationlist-2288-dummy"></div>
+<textarea><div id="jg-widget-donationlist-50-dummy"></div>
 <script>
 (function(){
 
-	var id = "jg-widget-donationlist-2288-dummy",
+	var id = "jg-widget-donationlist-50-dummy",
 		doc = document,
 		pfx = (window.location.toString().indexOf("https")==0) ? "https":"http";
 
@@ -15,7 +15,7 @@
 	if(el){
 		var js=doc.createElement('script');
 
-		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistEmbeddableJs/2288/dummy";
+		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistEmbeddableJs/50/dummy";
 		el.parentNode.insertBefore(js, el);
 
 	}
@@ -23,11 +23,11 @@
 </script></textarea>
 
 
-<div id="jg-widget-donationlist-2288-dummy"></div>
+<div id="jg-widget-donationlist-50-dummy"></div>
 <script>
 (function(){
 
-	var id = "jg-widget-donationlist-2288-dummy",
+	var id = "jg-widget-donationlist-50-dummy",
 		doc = document,
 		pfx = (window.location.toString().indexOf("https")==0) ? "https":"http";
 
@@ -36,7 +36,7 @@
 	if(el){
 		var js=doc.createElement('script');
 
-		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistEmbeddableJs/2288/dummy";
+		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistEmbeddableJs/50/dummy";
 		el.parentNode.insertBefore(js, el);
 
 	}
@@ -111,11 +111,11 @@
 <div class="example-col">
 
 	<textarea>
-		<div id="jg-widget-charityeventlist-2288-dummy"></div>
+		<div id="jg-widget-charityeventlist-50-dummy"></div>
 		<script>
 		(function(){
 
-			var id = "jg-widget-charityeventlist-2288-dummy",
+			var id = "jg-widget-charityeventlist-50-dummy",
 				doc = document,
 				pfx = (window.location.toString().indexOf("https")==0) ? "https":"http";
 
@@ -124,7 +124,7 @@
 			if(el){
 				var js=doc.createElement('script');
 
-				js.src="<?php echo Configure::read('App.fullBaseUrl');?>/charityeventlists/charityeventlistEmbeddableJs/2288/dummy";
+				js.src="<?php echo Configure::read('App.fullBaseUrl');?>/charityeventlists/charityeventlistEmbeddableJs/50/dummy";
 				el.parentNode.insertBefore(js, el);
 
 			}
@@ -133,11 +133,11 @@
 		</script>
 	</textarea>
 
-	<div id="jg-widget-charityeventlist-2288-dummy"></div>
+	<div id="jg-widget-charityeventlist-50-dummy"></div>
 	<script>
 	(function(){
 
-		var id = "jg-widget-charityeventlist-2288-dummy",
+		var id = "jg-widget-charityeventlist-50-dummy",
 			doc = document,
 			pfx = (window.location.toString().indexOf("https")==0) ? "https":"http";
 
@@ -146,7 +146,7 @@
 		if(el){
 			var js=doc.createElement('script');
 
-			js.src="<?php echo Configure::read('App.fullBaseUrl');?>/charityeventlists/charityeventlistEmbeddableJs/2288/dummy";
+			js.src="<?php echo Configure::read('App.fullBaseUrl');?>/charityeventlists/charityeventlistEmbeddableJs/50/dummy";
 			el.parentNode.insertBefore(js, el);
 
 		}
