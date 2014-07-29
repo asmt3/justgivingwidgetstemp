@@ -4,8 +4,8 @@
 	$donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $charityId . '?utm_source=website_cid' . $charityId . '&utm_medium=widget&utm_campaign=latestdonationswidget';
 
 ?>
-<div class="widget-container">
-	<div class="widget-header">
+<div class="jg-widget-container jg-widget-donationlist jg-widget-donationlist-empty">
+	<div class="jg-widget-header">
 		<?php echo $this->JgLogo->img(); ?>
 	</div>
 	

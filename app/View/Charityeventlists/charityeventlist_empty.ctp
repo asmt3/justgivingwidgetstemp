@@ -9,9 +9,9 @@
 
 <!-- No events found for this charity -->
 
-<div class="widget-container">
+<div class="jg-widget-container">
 	
-	<div class="widget-header">
+	<div class="jg-widget-header">
 		<?php echo $this->JgLogo->img(); ?>
 	</div>
 

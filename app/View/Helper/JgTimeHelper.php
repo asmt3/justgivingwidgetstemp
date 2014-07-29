@@ -31,7 +31,7 @@ class JgTimeHelper extends AppHelper {
 			return 'more than a month ago';
 		}
 		
-		return $this->Time->timeAgoInWords($secondsSinceEpoch);
+		return $this->Time->timeAgoInWords($secondsSinceEpoch) . ' ago';
 	}
 
 	function toUnixTimestamp($str) {

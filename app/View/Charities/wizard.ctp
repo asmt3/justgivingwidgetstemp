@@ -10,7 +10,7 @@
 	</li>
 
 	<li>
-		<a target="widget-preview" href="/donationlists/donationlistByRef/jamietest1">Donations By Ref</a>
+		<a target="widget-preview" href="/donationlists/donationlistByRef/funeralzone">Donations By Ref</a>
 	</li>
 
 </ul>

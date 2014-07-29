@@ -1,12 +1,12 @@
 <?
 
 	// only show 5 events
-	$events = array_slice($events, 0, 1);
+	$events = array_slice($events, 0, 5);
 
 ?>
-<div class="widget-container">
+<div class="jg-widget-container jg-widget-charityeventlist">
 	
-	<div class="widget-header">
+	<div class="jg-widget-header">
 		Fundraise for one of our events on <?php echo $this->JgLogo->img(); ?>
 	</div>
 

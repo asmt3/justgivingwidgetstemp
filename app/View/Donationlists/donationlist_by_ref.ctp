@@ -21,9 +21,9 @@ $donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $ch
 
 ?>
 
-<div class="widget-container">
+<div class="jg-widget-container jg-widget-donationlist jg-widget-donationlist-by-ref">
 
-	<div class="widget-header">
+	<div class="jg-widget-header">
 		Recent donations on <?php echo $this->JgLogo->img(); ?>
 	</div>
 
@@ -34,7 +34,7 @@ $donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $ch
 
 			<div class="detail">
 				<?php if ( ! $this->request->query('hide_donor')): ?>
-					<h2><?php echo $donation->donorDisplayName ?></h2>
+					<div class="name"><?php echo $donation->donorDisplayName ?></div>
 				<?php endif; // ( ! $this->request->query('hide_donor')): ?>
 
 				<p>

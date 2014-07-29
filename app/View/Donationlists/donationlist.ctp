@@ -4,23 +4,20 @@
 	$donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $charityId . '?utm_source=website_cid' . $charityId . '&utm_medium=widget&utm_campaign=latestdonationswidget';
 
 ?>
-<div class="widget-container">
-	<div class="widget-header">
+<div class="jg-widget-container jg-widget-donationlist">
+	<div class="jg-widget-header">
 		Recent donations on <?php echo $this->JgLogo->img(); ?>
 	</div>
+
 	<ul class="donationlist">
 
-	<?php 
-
-	foreach ($donations as $donation):?>
+	<?php foreach ($donations as $donation): ?>
 		<li class="cf">
 		
 
-			
-
 			<div class="detail">
 				<?php if ( ! $this->request->query('hide_donor')): ?>
-					<h2><?php echo $donation->donorDisplayName ?></h2>
+					<div class="name"><?php echo $donation->donorDisplayName ?></div>
 				<?php endif; // ( ! $this->request->query('hide_donor')): ?>
 
 
@@ -56,6 +53,6 @@
 	</ul>
 
 	<div class="cta">
-			<a href="<?php echo $donateURL?>">Donate</a>
+		<a href="<?php echo $donateURL?>">Donate</a>
 	</div>
 </div>

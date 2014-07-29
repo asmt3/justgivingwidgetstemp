@@ -3,10 +3,10 @@
 
 /* Events list */
 html ul.eventsList {list-style: none; margin:0; padding:0;}
-html ul.eventsList li {margin-bottom:1em; }
+html ul.eventsList li {margin-bottom:30px; }
 html ul.eventsList .detail {float:left; width:60%;}
-html ul.eventsList .name {padding:2px 10px; color:#333; font-size:16px;}
-html ul.eventsList .startDate {padding:2px 10px; font-size: 12px; font-style: italic;}
+html ul.eventsList .name {padding:2px 10px; color:#252525; font-size:15px; font-weight:normal;}
+html ul.eventsList .startDate {padding:2px 10px; font-size: 14px; font-weight: 300; }
 
 html .cta-fundraise {float:right; width:39%;}
 html .cta-fundraise a {display: block; color:#fff; background: #f58220; padding:1em; text-decoration: none; text-align: center; border-radius: 2px;}

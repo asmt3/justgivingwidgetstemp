@@ -43,6 +43,8 @@ class CharityeventlistsController extends AppController {
 
 		$events = $result->events;
 
+		$events = array($events[0],$events[0],$events[0],$events[0]);
+
 		$this->set('events', $events);
 		$this->set('charity_id', $charity_id);
 

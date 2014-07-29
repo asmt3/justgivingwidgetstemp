@@ -7,7 +7,7 @@ class JgNumberHelper extends AppHelper {
 
 	function donation($value) {
 		if ($value < 0.01) { // in case it's a float
-			return '<span class="donation-undisclosed">Undisclosed</div>';
+			return '<span class="donation-undisclosed">Undisclosed</span>';
 		} else {
 			return $this->Number->currency($value, 'GBP');
 		}

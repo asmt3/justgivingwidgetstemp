@@ -2,6 +2,7 @@ html .jg-widget {
   position: relative;
   min-width: 179px;
   border: 1px solid #78256d;
+  border-radius: 2px;
   /* Utils */
   /* Buttons */
 }
@@ -284,15 +285,25 @@ html .jg-widget .jg-button-primary:hover.jg-pure-button-disabled {
 /*# sourceMappingURL=widget-fundraisingpage.css.map */
 
 /*asmt3*/
-.widget-header {
-  margin-bottom:10px;
+
+
+/* Widget Container */
+.jg-widget-container {
+  min-width:320px; 
+  max-width:480px;  
+  margin:20px;
+}
+
+.jg-widget-header {
   color:#333; 
   font-size: 16px; 
-  padding:4px 10px; 
+  padding:0 0 20px; 
+  margin:0 0 30px;
   text-align: center; 
   text-transform: uppercase;
+  border-bottom:solid 1px #882c84;
 }
-.widget-header img.jg-logo {
-  margin-bottom:-5px;
+.jg-widget-header img.jg-logo {
+  margin:8px 4px -4px;
   height:22px;
 }
