@@ -12,7 +12,7 @@ $(function() {
 
 	.autocomplete( "instance" )._renderItem = function( ul, item ) {
       return $( "<li>" )
-        .append( '<a href="/charities/wizard/' + item.charityId + '">' + item.name + ' (' + item.registrationNumber + ')</a>' )
+        .append( '<a href="/pages/examples?cid=' + item.charityId + '">' + item.name + ' (' + item.registrationNumber + ')</a>' )
         .appendTo( ul );
     };
 

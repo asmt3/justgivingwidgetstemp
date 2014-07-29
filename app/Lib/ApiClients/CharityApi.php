@@ -25,7 +25,6 @@ class CharityApi extends ClientBase
 	public function Donations($charityId)
 	{
 		$locationFormat = $this->Parent->RootDomain . "{apiKey}/v{apiVersion}/charity/" . $charityId . "/donations";
-
 		$url = $this->BuildUrl($locationFormat);
 		$json = $this->curlWrapper->Get($url, $this->BuildAuthenticationValue());
 		return json_decode($json); 
