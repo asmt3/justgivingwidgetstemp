@@ -11,7 +11,7 @@ ul.donationlist {list-style: none; margin:0; padding:0;}
 ul.donationlist .total {float:right; width:25%; text-align: center; background: #ddd; padding:2.5%; margin-bottom:0.5em;}
 ul.donationlist li {margin-bottom:10px; margin-left:2.5%;}
 ul.donationlist li:nth-child(2n) .total {background:#eee; }
-ul.donationlist .amount {font-size:24px; }
+ul.donationlist .amount {font-size:16px; }
 ul.donationlist .amount .donation-undisclosed {font-size:14px; color:#999;}
 ul.donationlist .estimatedTaxReclaim {color:#999; font-size:12px !important;}
 ul.donationlist .detail {float:left; width:70%;}
@@ -22,5 +22,5 @@ ul.donationlist .detail p em.donationDate {font-size:13px !important; display:bl
 
 
 /* Donation list CTA*/
-.cta a {display: block; color:#333; background: #eee; padding:1em 0; text-decoration: none; text-align: center;}
-.cta a:hover {background: #ddd;}
+html .cta a {display: block; color:#fff; background: #882c84; padding:1em 0; text-decoration: none; text-align: center;}
+html .cta a:hover {background: #700066;}

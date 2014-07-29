@@ -44,7 +44,7 @@
 					<?php echo $this->JgNumber->donation($donation->amount); ?>
 				</div>
 
-				<?php echo $this->JgNumber->giftAid($donation->amount); ?>
+				<?php echo $this->JgNumber->giftAid($donation->estimatedTaxReclaim); ?>
 
 			</div>
 

@@ -31,7 +31,7 @@
 			</div>
 
 			<div class="cta-fundraise">
-				<a href="<?php echo $fundraiseURL; ?>">Fundraise for us</a>
+				<a href="<?php echo $fundraiseURL; ?>">Fundraise</a>
 			</div>
 
 		</li>

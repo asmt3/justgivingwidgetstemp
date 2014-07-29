@@ -19,7 +19,7 @@ class JgTimeHelper extends AppHelper {
 		$d = new DateTime();
 		$d->setTimestamp($secondsSinceEpoch);
 
-		return $d->format('l F jS, Y');
+		return $d->format('D, F jS, Y');
 	}
 
 	function timeAgoInWords($str) {
