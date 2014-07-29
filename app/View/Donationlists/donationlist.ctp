@@ -6,7 +6,7 @@
 ?>
 <div class="widget-container">
 	<div class="widget-header">
-		Recent donations on <img src="<?php echo Configure::read('App.fullBaseUrl');?>/img/logo-justgiving.png" class="jg-logo">
+		Recent donations on <?php echo $this->JgLogo->img(); ?>
 	</div>
 	<ul class="donationlist">
 
@@ -41,16 +41,10 @@
 			<div class="total">
 
 				<div class="amount">
-					<?php echo $this->Number->currency($donation->amount, 'GBP'); ?>
+					<?php echo $this->JgNumber->donation($donation->amount); ?>
 				</div>
 
-				<?php if ($donation->estimatedTaxReclaim): ?>
-
-					<div class="estimatedTaxReclaim">
-						+ <?php echo $this->Number->currency($donation->estimatedTaxReclaim, 'GBP'); ?> GiftAid
-					</div>
-
-				<?php endif; //($donation->estimatedTaxReclaim): ?>
+				<?php echo $this->JgNumber->giftAid($donation->amount); ?>
 
 			</div>
 

@@ -7,7 +7,7 @@
 <div class="widget-container">
 	
 	<div class="widget-header">
-		Fundraise for one of our events on <img src="<?php echo Configure::read('App.fullBaseUrl');?>/img/logo-justgiving.png" class="jg-logo">
+		Fundraise for one of our events on <?php echo $this->JgLogo->img(); ?>
 	</div>
 
 	<ul class="eventsList">
@@ -20,15 +20,17 @@
 	?>
 		<li class="cf">
 
-			<div class="name">
-				<?php echo $event->name; ?>
+			<div class="detail">
+				<div class="name">
+					<?php echo $event->name; ?>
+				</div>
+
+				<div class="startDate">
+					<?php echo $this->JgTime->dateWithoutTime($event->startDate); ?>
+				</div>
 			</div>
 
-			<div class="startDate">
-				<?php echo $this->JgTime->dateWithoutTime($event->startDate); ?>
-			</div>
-
-			<div class="fundraise">
+			<div class="cta-fundraise">
 				<a href="<?php echo $fundraiseURL; ?>">Fundraise for us</a>
 			</div>
 
