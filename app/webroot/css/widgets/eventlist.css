@@ -12,3 +12,9 @@ html .cta-fundraise {float:right; width:39%;}
 html .cta-fundraise a {display: block; color:#fff; background: #f58220; padding:1em; text-decoration: none; text-align: center; border-radius: 2px;}
 html .cta-fundraise a:hover {background: #d85700;}
 
+/* No events */
+html .cta-fundraise-no-events {margin:0 auto; width:45%;}
+html .cta-fundraise-no-events a {display: block; color:#fff; background: #f58220; padding:1em; text-decoration: none; text-align: center; border-radius: 2px;}
+html .cta-fundraise-no-events a:hover {background: #d85700;}
+
+html .no-events-intro {width:55%; margin:1em auto; text-align: center;}

@@ -10,7 +10,23 @@ class CharityeventlistsController extends AppController {
 
 		$result = $this->jgClient->Charity->Events($charity_id);
 
-		$this->set('events', $result->events);
+		$events = $result->events;
+
+		$this->set('events', $events);
+		$this->set('charity_id', $charity_id);
+
+		// if there are no events, render a different view
+		if (count($events) == 0) {
+			$this->render('charityeventlist_empty');
+		}
+	}
+
+	function charityeventlistEmpty($charity_id) {
+
+
+		$events = array();
+
+		$this->set('events', $events);
 		$this->set('charity_id', $charity_id);
 	}
 
@@ -20,6 +36,9 @@ class CharityeventlistsController extends AppController {
 		$this->set('target_element_id', 'jg-widget-charityeventlist-' . $charity_id . '-' . $dummy);
 
 		$result = $this->jgClient->Charity->Events($charity_id);
+
+
+
 
 		$this->set('events', $result->events);
 		$this->set('charity_id', $charity_id);
