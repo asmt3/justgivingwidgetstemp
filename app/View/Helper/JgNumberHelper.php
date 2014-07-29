@@ -20,7 +20,7 @@ class JgNumberHelper extends AppHelper {
 
 			$html = '<div class="estimatedTaxReclaim">+ ';
 			$html .= $this->Number->currency($value, 'GBP');
-			$html .= ' Gift Aid</div>';
+			$html .= '<span class="gift-aid-text">Gift Aid</span></div>';
 			
 			return $html;
 		}	

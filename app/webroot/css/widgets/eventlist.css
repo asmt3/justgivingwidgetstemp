@@ -1,20 +1,17 @@
-
-
-
 /* Events list */
-html ul.eventsList {list-style: none; margin:0; padding:0;}
-html ul.eventsList li {margin-bottom:30px; }
-html ul.eventsList .detail {float:left; width:60%;}
-html ul.eventsList .name {color:#252525; font-size:15px; font-weight:normal;}
-html ul.eventsList .startDate {font-size: 14px; font-weight: 300; }
+.jg-widget-charityeventlist ul.eventsList {list-style: none; margin:0; padding:0;}
+.jg-widget-charityeventlist ul.eventsList li {margin-bottom:30px; }
+.jg-widget-charityeventlist ul.eventsList .detail {float:left; width:60%;}
+.jg-widget-charityeventlist ul.eventsList .name {color:#252525; font-size:15px; font-weight:normal;}
+.jg-widget-charityeventlist ul.eventsList .startDate {font-size: 14px; font-weight: 300; }
 
-html .cta-fundraise {float:right; width:39%;}
-html .cta-fundraise a {display: block; color:#fff; background: #f58220; padding:10px 5px; text-decoration: none; text-align: center; border-radius: 2px;}
-html .cta-fundraise a:hover {background: #d85700;}
+.jg-widget-charityeventlist .cta-fundraise {float:right; width:39%;}
+.jg-widget-charityeventlist .cta-fundraise a {display: block; color:#fff; background: #f58220; padding:10px 5px; text-decoration: none; text-align: center; border-radius: 2px;}
+.jg-widget-charityeventlist .cta-fundraise a:hover {background: #d85700;}
 
 /* No events */
-html .cta-fundraise-no-events {margin:0 auto; width:45%;}
-html .cta-fundraise-no-events a {display: block; color:#fff; background: #f58220; padding:1em; text-decoration: none; text-align: center; border-radius: 2px;}
-html .cta-fundraise-no-events a:hover {background: #d85700;}
+.jg-widget-charityeventlist .cta-fundraise-no-events {margin:0 auto; width:45%;}
+.jg-widget-charityeventlist .cta-fundraise-no-events a {display: block; color:#fff; background: #f58220; padding:1em; text-decoration: none; text-align: center; border-radius: 2px;}
+.jg-widget-charityeventlist .cta-fundraise-no-events a:hover {background: #d85700;}
 
-html .no-events-intro {width:55%; margin:1em auto; text-align: center;}
+.jg-widget-charityeventlist .no-events-intro {width:55%; margin:1em auto; text-align: center;}
