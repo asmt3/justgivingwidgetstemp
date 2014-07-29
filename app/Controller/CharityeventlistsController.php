@@ -12,6 +12,8 @@ class CharityeventlistsController extends AppController {
 
 		$events = $result->events;
 
+
+
 		$this->set('events', $events);
 		$this->set('charity_id', $charity_id);
 
@@ -39,11 +41,22 @@ class CharityeventlistsController extends AppController {
 
 
 
+		$events = $result->events;
 
-		$this->set('events', $result->events);
+		$events[0]->name = ' alan\'s  ';
+
+		$this->set('events', $events);
 		$this->set('charity_id', $charity_id);
 
-		$this->render('charityeventlist');
+		
+
+		// if there are no events, render a different view
+		if (count($events) == 0) {
+			$this->render('charityeventlist_empty');
+		} else {
+			$this->render('charityeventlist');	
+		}
+
 	}
 
 

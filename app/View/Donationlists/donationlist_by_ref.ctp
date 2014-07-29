@@ -16,6 +16,9 @@ if ($limit = $this->request->query('limit')) {
 
 $donations = array_slice($donations, 0, $limit);
 
+// build donate URL
+$donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $charityId . '?utm_source=website_cid' . $charityId . '&utm_medium=widget&utm_campaign=latestdonationswidget';
+
 ?>
 
 <div class="widget-container">
@@ -28,8 +31,6 @@ $donations = array_slice($donations, 0, $limit);
 
 	<?php foreach ($donations as $donation):?>
 		<li class="cf">
-
-			
 
 			<div class="detail">
 				<?php if ( ! $this->request->query('hide_donor')): ?>
@@ -63,6 +64,12 @@ $donations = array_slice($donations, 0, $limit);
 	<?php endforeach ?>
 
 	</ul>
+
+
+
+	<div class="cta">
+			<a href="<?php echo $donateURL?>">Donate</a>
+	</div>
 
 
 </div>

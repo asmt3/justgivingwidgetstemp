@@ -59,11 +59,11 @@
 
 
 <textarea>
-<div id="jg-widget-donationlistbyref-jamietest1-dummy"></div>
+<div id="jg-widget-donationlistbyref-50-jamietest1-dummy"></div>
 <script>
 (function(){
 
-	var id = "jg-widget-donationlistbyref-jamietest1-dummy",
+	var id = "jg-widget-donationlistbyref-50-jamietest1-dummy",
 		doc = document,
 		pfx = (window.location.toString().indexOf("https")==0) ? "https":"http";
 
@@ -72,7 +72,7 @@
 	if(el){
 		var js=doc.createElement('script');
 
-		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistByRefEmbeddableJs/jamietest1/dummy";
+		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistByRefEmbeddableJs/50/jamietest1/dummy";
 		el.parentNode.insertBefore(js, el);
 
 	}
@@ -83,11 +83,11 @@
 
 
 
-<div id="jg-widget-donationlistbyref-jamietest1-dummy"></div>
+<div id="jg-widget-donationlistbyref-50-jamietest1-dummy"></div>
 <script>
 (function(){
 
-	var id = "jg-widget-donationlistbyref-jamietest1-dummy",
+	var id = "jg-widget-donationlistbyref-50-jamietest1-dummy",
 		doc = document,
 		pfx = (window.location.toString().indexOf("https")==0) ? "https":"http";
 
@@ -96,7 +96,7 @@
 	if(el){
 		var js=doc.createElement('script');
 
-		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistByRefEmbeddableJs/jamietest1/dummy";
+		js.src="<?php echo Configure::read('App.fullBaseUrl');?>/donationlists/donationlistByRefEmbeddableJs/50/jamietest1/dummy";
 		el.parentNode.insertBefore(js, el);
 
 	}

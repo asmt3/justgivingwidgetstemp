@@ -1,6 +1,6 @@
 <?php
 
-$contentWithSlashes = addslashes($this->fetch('content'));
+$contentWithSlashes = addcslashes($this->fetch('content'), '\'\\'); // just escape single quotes and backslashes
 
 $contentMinified = preg_replace(
 	['/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s'],['>','<','\\1'], 

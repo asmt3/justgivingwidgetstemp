@@ -24,3 +24,7 @@ ul.donationlist .detail p em.donationDate {font-size:13px !important; display:bl
 /* Donation list CTA*/
 html .cta a {display: block; color:#fff; background: #882c84; padding:1em 0; text-decoration: none; text-align: center;}
 html .cta a:hover {background: #700066;}
+
+
+/* No donations */
+html 
