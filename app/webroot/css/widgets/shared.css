@@ -31,7 +31,7 @@ html .jg-widget {
 html .jg-widget * {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  /*font-size: 16px !important;*/ /*asmt3*/
+  /*font-size: 16px ;*/ /*asmt3*/
   font-size: 16px;
   color: black;
   /* bootstrap overrides */
@@ -64,7 +64,7 @@ html .jg-widget [class*="jg-widget-"] {
   /*margin-bottom: 0.75em;*/ /*asmt3*/
 }
 html .jg-widget .jg-widget-frame {
-  margin-bottom: 0!important;
+  margin-bottom: 0;
 }
 html .jg-widget .jg-widget-fr-image {
   position: relative;
@@ -98,7 +98,7 @@ html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper * {
   color: #fff;
 }
 html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper a {
-  color: #fff !important;
+  color: #fff ;
 }
 html .jg-widget .jg-widget-fr-image .jg-widget-fr-image-blocks-wrapper .jg-widget-fr-title {
   margin-bottom: 0.5em;
@@ -274,7 +274,7 @@ html .jg-widget .jg-pure-button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 html .jg-widget .jg-button-magic {
-  color: #ffffff !important;
+  color: #ffffff ;
   background: #882c84;
 }
 html .jg-widget .jg-button-magic:focus,
@@ -288,7 +288,7 @@ html .jg-widget .jg-button-magic :active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
 }
 html .jg-widget .jg-button-primary {
-  color: #ffffff !important;
+  color: #ffffff ;
   background: #f58220;
 }
 html .jg-widget .jg-button-primary:focus,
