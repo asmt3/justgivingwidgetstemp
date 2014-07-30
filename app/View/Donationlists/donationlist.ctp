@@ -1,7 +1,7 @@
 <?php
 
 	// build donate URL
-	$donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $charityId . '?utm_source=website_cid' . $charityId . '&utm_medium=widget&utm_campaign=latestdonationswidget';
+	$donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $charityId . '?utm_source=website_cid' . $charityId . '&utm_medium=widget&utm_campaign=latestdonationswidget&reference=latestdonationswidget';
 
 ?>
 <div class="jg-widget-container jg-widget-donationlist">
@@ -53,6 +53,6 @@
 	</ul>
 
 	<div class="cta">
-		<a href="<?php echo $donateURL?>">Donate</a>
+		<a target="_blank" href="<?php echo $donateURL?>">Donate</a>
 	</div>
 </div>

@@ -42,5 +42,6 @@ class JustGivingClient
 		$this->Search			= new SearchApi($this);
 		$this->Event			= new EventApi($this);
 		$this->Team			    = new TeamApi($this);
+		
 	}
 }

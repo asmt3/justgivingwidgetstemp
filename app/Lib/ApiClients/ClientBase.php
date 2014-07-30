@@ -31,5 +31,16 @@ class ClientBase
 	public function WriteLine($string)
 	{
 		echo $string . "<br/>";
-	}	
+	}
+
+	public function interpretResponse($responseJSON) {
+
+		$responseObj = json_decode($responseJSON);
+		
+		if (is_null($responseObj)) {
+			throw new Exception("Response was not JSON: " . $responseJSON);
+		}
+
+		return $responseObj;
+	}
 }
