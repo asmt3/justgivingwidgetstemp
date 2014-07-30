@@ -58,10 +58,10 @@ $contentMinified = preg_replace(
     };
 
     addLink('https://widgets.justgiving.com/Content/roboto.css');
-    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/importantcss/process/shared');
-    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/importantcss/process/donationlist');
-    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/importantcss/process/donationlistbyref');
-    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/importantcss/process/eventlist');
+    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/ImportantCss/process/shared');
+    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/ImportantCss/process/donationlist');
+    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/ImportantCss/process/donationlistbyref');
+    addLink('<?php echo Configure::read('App.fullBaseUrl');?>/ImportantCss/process/eventlist');
 
     var widget = addContent(el, null, 'jg-widget', 'max-width:400px;');
     
