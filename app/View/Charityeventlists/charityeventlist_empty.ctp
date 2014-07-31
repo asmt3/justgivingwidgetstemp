@@ -9,7 +9,7 @@
 
 <!-- No events found for this charity -->
 
-<div class="jg-widget-container">
+<div class="jg-widget-container jg-widget-charityeventlist">
 	
 	<div class="jg-widget-header">
 		<?php echo $this->JgLogo->img(); ?>

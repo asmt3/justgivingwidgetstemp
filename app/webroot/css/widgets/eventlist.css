@@ -20,7 +20,7 @@
 .jg-widget-charityeventlist .cta-fundraise a:hover {background: #d85700;}
 
 /* No events */
-.jg-widget-charityeventlist .cta-fundraise-no-events {margin:0 auto; width:45%;}
+.jg-widget-charityeventlist .cta-fundraise-no-events {margin:0 auto;}
 .jg-widget-charityeventlist .cta-fundraise-no-events a {display: block; color:#fff; background: #f58220; padding:1em; text-decoration: none; text-align: center; border-radius: 2px;}
 .jg-widget-charityeventlist .cta-fundraise-no-events a:hover {background: #d85700;}
-.jg-widget-charityeventlist .no-events-intro {width:55%; margin:1em auto; text-align: center;}
+.jg-widget-charityeventlist .no-events-intro {margin:1em auto; text-align: center;}
