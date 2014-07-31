@@ -31,15 +31,27 @@ class JgTimeHelper extends AppHelper {
 			return 'more than a month ago';
 		}
 		
-		return $this->Time->timeAgoInWords($secondsSinceEpoch) . ' ago';
+		return $this->Time->timeAgoInWords($secondsSinceEpoch);
 	}
 
 	function toUnixTimestamp($str) {
-		$str = str_replace('/Date(', '', $str);
-		$str = str_replace(')/', '', $str);
-		$parts = explode('+', $str);
+		// convert the JG timestamp
+		// which may of the form /Data(Milliseconds)/
+		// OR ISO8601
 
-		$secondsSinceEpoch = $parts[0]/1000 + $parts[1] * 60 * 60;
+		if (strpos($str, 'Date') !== FALSE) {
+			$secondsSinceEpoch = $this->convertASPTToUnixTimestamp($str);
+		} else {
+			// assume it's a standard format
+			$secondsSinceEpoch = strtotime($str);
+		}
+		
 		return $secondsSinceEpoch;
+	}
+
+	function convertASPTToUnixTimestamp($str) {
+		preg_match('/(\d{10})(\d{3})([\+\-]\d{4})/', $str, $matches);
+		$dt = DateTime::createFromFormat("U.u.O",vsprintf('%2$s.%3$s.%4$s', $matches));
+		return $dt->format('U');
 	}
 }
