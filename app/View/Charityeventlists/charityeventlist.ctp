@@ -7,7 +7,7 @@
 <div class="jg-widget-container jg-widget-charityeventlist">
 	
 	<div class="jg-widget-header">
-		Fundraise for one of our events on <?php echo $this->JgLogo->img(); ?>
+		Fundraise for one of our events on <br> <?php echo $this->JgLogo->img(); ?>
 	</div>
 
 	<ul class="eventsList">

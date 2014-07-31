@@ -331,4 +331,5 @@ html .jg-widget .jg-button-primary:hover.jg-pure-button-disabled {
 .jg-widget .jg-widget-header img.jg-logo {
   margin:8px 4px -4px;
   height:22px;
+  display:inline;
 }

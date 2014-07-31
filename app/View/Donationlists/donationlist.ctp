@@ -6,7 +6,7 @@
 ?>
 <div class="jg-widget-container jg-widget-donationlist">
 	<div class="jg-widget-header">
-		Recent donations on <?php echo $this->JgLogo->img(); ?>
+		Recent donations on <br> <?php echo $this->JgLogo->img(); ?>
 	</div>
 
 	<ul class="donationlist">

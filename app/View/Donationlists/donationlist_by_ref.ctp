@@ -24,7 +24,7 @@ $donateURL = 'https://www.justgiving.com/4w350m3/donation/direct/charity/' . $ch
 <div class="jg-widget-container jg-widget-donationlist jg-widget-donationlist-by-ref">
 
 	<div class="jg-widget-header">
-		Recent donations on <?php echo $this->JgLogo->img(); ?>
+		Recent donations on <br> <?php echo $this->JgLogo->img(); ?>
 	</div>
 
 	<ul class="donationlist">
