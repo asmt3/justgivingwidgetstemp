@@ -8,6 +8,8 @@ class ImportantCssController extends AppController {
 
 	function process($name) {
 
+		$this->response->type('css');
+
 		$dir = new Folder(CSS . 'widgets/');
 		$files = $dir->find($name . '.css');
 
